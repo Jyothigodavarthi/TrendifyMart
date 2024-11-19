@@ -127,10 +127,15 @@
     width: 100%;
     display: block;
 }
-.h1{
-  margin: 0;
-  font-sie: 1.5em;
-  text-align: center;
+h1 {
+  font-family: 'Arial', sans-serif; /* Choose a modern font */
+  font-size: 36px; /* Adjust font size */
+  color: #333; /* Set text color */
+  text-align: center; /* Center align the text */
+  margin: 20px 0; /* Add spacing above and below */
+  text-transform: uppercase; /* Make text uppercase */
+  letter-spacing: 2px; /* Add spacing between letters */
+  font-weight: bold; /* Make the text bold */
 }
 /* Product Grid Layout */
 .product-grid {
