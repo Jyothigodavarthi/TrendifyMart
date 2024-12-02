@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wishlist</title>
+    <style>
+        /* Reset default browser margins and paddings */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%; /* Ensure the body and html take full height */
+        }
+
+        /* Styles for the wishlist-page container */
+        .wishlist-page {
+            display: flex;                 /* Enable flexbox for layout */
+            flex-direction: column;        /* Stack elements vertically */
+            justify-content: flex-start; /* Aligns content at the top */
+            align-items: center;           /* Center elements horizontally */
+            height: 100vh;                 /* Full height of the viewport */
+            font-family: Arial, sans-serif; /* Apply a clean, modern font */
+            text-align: center;            /* Center-align the text inside */
+            background-color: #f9f9f9;     /* Light background for better readability */
+            background-image: url('wishlist-background.jpeg'); /* Replace with your wishlist background image */
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Prevent repetition */
+            min-height: 100vh; /* Minimum height to cover viewport */
+            padding: 20px; /* Optional padding */
+        }
+
+        /* Styles for the heading */
+        .wishlist-page h1 {
+            font-size: 2.5rem; /* Larger, prominent heading font size */
+            color: black; /* Darker color for better visibility */
+            margin: 0; /* Removes default margin around h1 */
+            padding-top: 20px; /* Add some space at the top of the page */
+            text-align: center; /* Centers the heading horizontally */
+            width: 100%; /* Ensures the heading spans the full width of the container */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Styles for the wishlist message */
+        .wishlist-message {
+            font-size: 1.5rem;                /* Slightly smaller font size for the message */
+            color: #00000;                      /* Muted color for a softer look */
+            margin-top: 50px;                 /* Add spacing between heading and message */
+            display: flex;
+            justify-content: center;          /* Center the message horizontally */
+            align-items: center;              /* Center the message vertically */
+           height: 100%;                     /* Ensure the message is centered vertically */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wishlist-page">
+        <h1>Your Wishlist</h1>
+        <p class="wishlist-message">Your wishlist is empty ❤️.....</p>
+    </div>
+</body>
+</html>
