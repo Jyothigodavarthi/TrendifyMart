@@ -38,6 +38,7 @@ Live Website Link : [TrendifyMart Live Demo](http://127.0.0.1:5501/index.html).
 **Dynamic Banners**:**Vertical sliding banners** feature new arrivals, seasonal collections, and ongoing promotions. These dynamic banners help keep the website fresh and engaging by showcasing the latest products and special deals, ensuring customers are always informed about new trends and offers.
 
 **Responsive Design**:Fully optimized for **desktops**, **tablets**, and **mobile devices**. The website provides a seamless browsing experience across various screen sizes, ensuring the interface adapts to each device. Whether you're shopping on a laptop or mobile phone, the site is designed to be intuitive, easy to navigate, and perform well across all platforms.
+
 **Buy Now**:
 Proceed directly to checkout by clicking the **"Buy Now"** button. This feature allows users to bypass the shopping cart and move straight to the order summary page, streamlining the purchasing process for those who want to complete their order quickly. It's perfect for customers who know exactly what they want to buy.
 
