@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - TrendifyMart</title>
+<style>
+/* Main content styles for categories */
+main {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: none; /* Remove borders */
+  border-radius: 8px; /* Keep optional rounded corners */
+  background-color: transparent; /* Use transparent instead of 'none' */
+  box-shadow: none; /* Remove shadow if unnecessary */
+}
+
+section h2 {
+  color: white; /* Category header color */
+  font-size: 1.3em;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+ul li {
+  padding: 8px 0;
+  font-size: 1.1em;
+  border-bottom: none; /* Remove lines under list items */
+}
+
+ul li a {
+  text-decoration: none; /* No underline for links */
+  color: black; /* Link color */
+}
+
+ul li a:hover {
+  color: #0056b3; /* Change color on hover */
+  text-decoration: none;
+}
+
+/* Categories Page Background */
+.categories-page {
+  background-image: url('categories-background.jpg'); /* Use your image file */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repetition */
+  min-height: 100vh; /* Minimum height to cover viewport */
+  padding: 20px; /* Optional padding */
+}
+
+/* Grid Layout for Larger Screens */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Adjust spacing between items */
+  }
+
+  /* Ensure no borders or lines in grid items */
+  main > * {
+    border: 1px solid black; /* Border for items */
+    box-shadow: default; /* Remove shadow */
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr; /* Adjust for larger screens */
+  }
+}
+</style>
+</head>
+<body class="categories-page">
+
+    <div class="categories-content">
+    <header>
+        <h1>CATEGORIES</h1>
+    </header>
+
+    <main>
+        
+
+        <!-- Category List -->
+        <section>
+            <h2>Fashion</h2>
+            <ul>
+                <li><a href="women.html">Women's Clothing</a></li>
+                <li><a href="men.html">Men's Clothing</a></li>
+                <li><a href="kids.html">Kids' Clothing</a></li>
+                <li><a href="footwear.html">Footwear</a></li>
+                <li><a href="accessories-fashion.html">Fashion Accessories</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Electronics</h2>
+            <ul>
+                <li><a href="mobiles.html">Mobile Phones</a></li>
+                <li><a href="laptops.html">Laptops</a></li>
+                <li><a href="cameras.html">Cameras</a></li>
+                <li><a href="headphones.html">Headphones</a></li>
+                <li><a href="smartwatches.html">Smartwatches</a></li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Home & Kitchen</h2>
+            <ul>
+                <li><a href="kitchen-appliances.html">Kitchen Appliances</a></li>
+                <li><a href="furniture-home.html">Furniture</a></li>
+                <li><a href="bedding.html">Bedding</a></li>
+                <li><a href="decor.html">Home Decor</a></li>
+            </ul>
+        </section>
+
+         <section>
+      <h2>Furniture</h2>
+      <ul>
+                <li><a href="Sofas.html">Sofas</a></li>
+                <li><a href="Beds.html">Beds</a></li>
+                <li><a href="Chairs.html">Chairs</a></li>
+                <li><a href="Tables.html">Tables</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Groceries</h2>
+      <ul>
+                <li><a href="Fruits.html">Fruits</a></li>
+                <li><a href="Vegetables.html">Vegetables</a></li>
+                <li><a href="Snacks.html">Snacks</a></li>
+                <li><a href="Staples.html">Staples</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Beauty & Personal Care</h2>
+      <ul>
+                <li><a href="Skin Care.html">Skin Care</a></li>
+                <li><a href="Hair Care.html">Hair Care</a></li>
+                <li><a href="Make Up.html">Make Up</a></li>
+                <li><a href="Fragrances.html">Fragrances</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Sports</h2>
+      <ul>
+                <li><a href="Football.html">Football</a></li>
+                <li><a href="Cricket.html">Cricket</a></li>
+                <li><a href="Gym Equipment.html">Gym Equipment</a></li>
+                <li><a href="Badminton.html">Badminton</a></li>
+
+      </ul>
+    </section>
+
+    <section>
+      <h2>Medicines</h2>
+      <ul>
+                <li><a href="Ayurvedic.html">Ayurvedic</a></li>
+                <li><a href="Prescription.html">Prescription</a></li>
+                <li><a href="Over-the-counter.html">Over-the-counter</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Stationery</h2>
+      <ul>
+                <li><a href="Pens & Pencils.html">Pens & Pencils</a></li>
+                <li><a href="Notebooks.html">Notebooks</a></li>
+                <li><a href="Markers.html">Markers</a></li>
+                <li><a href="Files & Folders.html">Files & Folders</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Toys</h2>
+      <ul>
+                <li><a href="Action Figures.html">Action Figures</a></li>
+                <li><a href="Dolls.html">Dolls</a></li>
+                <li><a href="Puzzles.html">Puzzles</a></li>
+                <li><a href="Board Games.html">Board Games</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Smart Gadgets</h2>
+      <ul>
+                <li><a href="Smart Watches.html">Smart Watches</a></li>
+                <li><a href="Fitness Trackers.html">Fitness Trackers</a></li>
+                <li><a href="Smart Home Devices.html">Smart Home Devices</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Baby Care</h2>
+      <ul>
+                <li><a href="Diapers.html">Diapers</a></li>
+                <li><a href="Baby Food.html">Baby Food</a></li>
+                <li><a href="Toys.html">Toys</a></li>
+                <li><a href="Baby Clothing.html">Baby Clothing</a></li>
+      </ul>
+    </section>
+
+    </main>
+    </div>
+
+</body>
+</html>

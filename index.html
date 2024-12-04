@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendifyMart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+   <!-- Main Header -->
+<header class="navbar">
+  <div class="logo">TrendifyMart</div>
+  
+  <!-- Search Bar -->
+  <input type="text" class="search-bar" placeholder="Search for products, brands, and more">
+  <button class="search-btn"><i class="fas fa-search"></i></button>
+  
+  <!-- Navigation Links and Icons -->
+  <div class="nav-links">
+    <!-- Account Dropdown -->
+    <div class="account-dropdown">
+      <a href="#" class="account-icon"><i class="fas fa-user"></i> Account</a>
+      <div class="dropdown-content">
+        <a href="#">Profile</a>
+        <a href="#">Orders</a>
+        <a href="#">Settings</a>
+        <a href="#">Logout</a>
+      </div>
+    </div>
+
+    <a href="login.html">Login</a>
+    <a href="#">More</a>
+    <a href="#" class="home-icon"><i class="fas fa-home"></i> Home</a>
+    <a href="categories.html" class="category-icon"><i class="fas fa-th-large"></i> Categories</a>
+  
+
+
+    <a href="wishlist.html" class="wishlist-icon"><i class="fas fa-heart"></i> Wishlist</a>
+    <a href="cart.html" class="cart-icon"><i class="fas fa-shopping-cart"></i><span id="cart-count">0</span> Cart</a>
+
+    <!-- Add to your navigation bar -->
+    <a href="#contact" class="contact-icon"><i class="fas fa-envelope"></i> Contact Us</a>
+  </div>               
+</header>
+
+   <section class="banner">
+    <img src="banner 1.jpeg" alt="banner 1" class="banner-img">
+    <div class="welcome-message">
+        <h1>Welcome to TrendifyMart</h1>
+        <p>Discover Trendz that speak to you</p>
+    </div>
+  </section>
+
+   <h2>New Arrivals</h2>
+   <section class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="Wireless Headphones.jpeg" alt="Wireless Headphones" class="product-image">
+            <h3>Wireless Headphones</h3>
+            <p><span class="brand">Brand: SoundMax</span></p>
+            <p>Price: <span class="original-price">$50.00</span> $40.00 <span class="discount">20% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Wireless Headphones', 40)">Add to Cart</button>
+            <button onclick="buyNow('Wireless Headphones', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="Smart Fitness Watch.jpeg" alt="Smart Fitness Watch" class="product-image">
+            <h3>Smart Fitness Watch</h3>
+            <p><span class="brand">Brand: FitTrack</span></p>
+            <p>Price: <span class="original-price">$75.00</span> $60.00 <span class="discount">20% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Smart Fitness Watch', 60)">Add to Cart</button>
+            <button onclick="buyNow('Smart Fitness Watch', 60)">Buy Now</button>
+        </div>
+
+        <!-- Product 3 -->
+    <div class="product-card">
+        <img src="Polarized Sunglasses.jpeg" alt="Polarized Sunglasses" class="product-image">
+        <h3>Polarized Sunglasses</h3>
+        <p><span class="brand">Brand: Ray-Ban</span></p>
+        <p>Price: <span class="original-price">$120.00</span> $95.00 <span class="discount">21% off</span></p>
+        <p class="rating">★★★★★</p>
+        <p class="free-delivery">Free Delivery</p>
+        <button onclick="addToCart('Polarized Sunglasses', 95)">Add to Cart</button>
+        <button onclick="buyNow('Polarized Sunglasses', 95)">Buy Now</button>
+    </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="Noise-Cancelling Earbuds.jpeg" alt="Noise-Cancelling Earbuds" class="product-image">
+            <h3>Noise-Cancelling Earbuds</h3>
+            <p><span class="brand">Brand: PureSound</span></p>
+            <p>Price: <span class="original-price">$65.00</span> $52.00 <span class="discount">20% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Noise-Cancelling Earbuds', 52)">Add to Cart</button>
+            <button onclick="buyNow('Noise-Cancelling Earbuds', 52)">Buy Now</button>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+            <img src="Wireless Mouse.jpeg" alt="Wireless Mouse" class="product-image">
+            <h3>Wireless Mouse</h3>
+            <p><span class="brand">Brand: Logitech</span></p>
+            <p>Price: <span class="original-price">$25.00</span> $20.00 <span class="discount">20% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Wireless Mouse', 20)">Add to Cart</button>
+            <button onclick="buyNow('Wireless Mouse', 20)">Buy Now</button>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+            <img src="Gaming Keyboard.jpeg" alt="Gaming Keyboard" class="product-image">
+            <h3>Gaming Keyboard</h3>
+            <p><span class="brand">Brand: Razer</span></p>
+            <p>Price: <span class="original-price">$80.00</span> $65.00 <span class="discount">18% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Gaming Keyboard', 65)">Add to Cart</button>
+            <button onclick="buyNow('Gaming Keyboard', 65)">Buy Now</button>
+        </div>
+
+        <!-- Product 7 -->
+         <div class="product-card">
+            <img src="Blender.jpeg" alt="Blender" class="product-image">
+            <h3>Blender</h3>
+            <p><span class="brand">Brand: Ninja</span></p>
+            <p>Price: <span class="original-price">$60.00</span> $50.00 <span class="discount">17% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Blender', 50)">Add to Cart</button>
+            <button onclick="buyNow('Blender', 50)">Buy Now</button>
+        </div>
+
+        <!-- Product 8 -->
+      <div class="product-card">
+        <img src="Running Sneakers.jpeg" alt="Running Sneakers" class="product-image">
+        <h3>Running Sneakers</h3>
+        <p><span class="brand">Brand: Nike</span></p>
+        <p>Price: <span class="original-price">$80.00</span> $65.00 <span class="discount">19% off</span></p>
+        <p class="rating">★★★★★</p>
+        <p class="free-delivery">Free Delivery</p>
+        <button onclick="addToCart('Running Sneakers', 65)">Add to Cart</button>
+        <button onclick="buyNow('Running Sneakers', 65)">Buy Now</button>
+      </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+            <img src="Tennis Racket.jpeg" alt="Tennis Racket" class="product-image">
+            <h3>Tennis Racket</h3>
+            <p><span class="brand">Brand: Wilson</span></p>
+            <p>Price: <span class="original-price">$100.00</span> $85.00 <span class="discount">15% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Tennis Racket', 85)">Add to Cart</button>
+            <button onclick="buyNow('Tennis Racket', 85)">Buy Now</button>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+            <img src="Skincare Set.jpeg" alt="Skincare Set" class="product-image">
+            <h3>Skincare Set</h3>
+            <p><span class="brand">Brand: Olay</span></p>
+            <p>Price: <span class="original-price">$30.00</span> $25.00 <span class="discount">17% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Skincare Set', 25)">Add to Cart</button>
+            <button onclick="buyNow('Skincare Set', 25)">Buy Now</button>
+        </div>
+      
+       <!-- Product 11 -->
+       <div class="product-card">
+        <img src="Women's Summer Dress.jpeg" alt="Women's Summer Dress" class="product-image">
+        <h3>Women's Summer Dress</h3>
+        <p><span class="brand">Brand: Zara</span></p>
+        <p>Price: <span class="original-price">$55.00</span> $40.00 <span class="discount">27% off</span></p>
+        <p class="rating">★★★★☆</p>
+        <p class="free-delivery">Free Delivery</p>
+        <button onclick="addToCart('Women\'s Summer Dress', 40)">Add to Cart</button>
+        <button onclick="buyNow('Women\'s Summer Dress', 40)">Buy Now</button>
+      </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+            <img src="Notebook Set.jpeg" alt="Notebook Set" class="product-image">
+            <h3>Notebook Set</h3>
+            <p><span class="brand">Brand: Moleskine</span></p>
+            <p>Price: <span class="original-price">$25.00</span> $20.00 <span class="discount">20% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Notebook Set', 20)">Add to Cart</button>
+            <button onclick="buyNow('Notebook Set', 20)">Buy Now</button>
+        </div>
+
+        <!-- Product 13 -->
+        <div class="product-card">
+            <img src="LEGO Building Set.jpeg" alt="LEGO Building Set" class="product-image">
+            <h3>LEGO Building Set</h3>
+            <p><span class="brand">Brand: LEGO</span></p>
+            <p>Price: <span class="original-price">$60.00</span> $50.00 <span class="discount">17% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('LEGO Building Set', 50)">Add to Cart</button>
+            <button onclick="buyNow('LEGO Building Set', 50)">Buy Now</button>
+        </div>
+
+        <!-- Product 14 -->
+        <div class="product-card">
+            <img src="Electric Kettle.jpeg" alt="Electric Kettle" class="product-image">
+            <h3>Electric Kettle</h3>
+            <p><span class="brand">Brand: Philips</span></p>
+            <p>Price: <span class="original-price">$40.00</span> $35.00 <span class="discount">12% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Electric Kettle', 35)">Add to Cart</button>
+            <button onclick="buyNow('Electric Kettle', 35)">Buy Now</button>
+        </div>
+
+        <!-- Product 15 -->
+        <div class="product-card">
+            <img src="Hair Dryer.jpeg" alt="Hair Dryer" class="product-image">
+            <h3>Hair Dryer</h3>
+            <p><span class="brand">Brand: Dyson</span></p>
+            <p>Price: <span class="original-price">$100.00</span> $85.00 <span class="discount">15% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Hair Dryer', 85)">Add to Cart</button>
+            <button onclick="buyNow('Hair Dryer', 85)">Buy Now</button>
+        </div>
+
+        <!-- Product 16 -->
+        <div class="product-card">
+            <img src="Smart TV.jpeg" alt="Smart TV" class="product-image">
+            <h3>Smart TV</h3>
+            <p><span class="brand">Brand: Samsung</span></p>
+            <p>Price: <span class="original-price">$500.00</span> $450.00 <span class="discount">10% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Smart TV', 450)">Add to Cart</button>
+            <button onclick="buyNow('Smart TV', 450)">Buy Now</button>
+        </div>
+
+        <!-- Product 17 -->
+        <div class="product-card">
+            <img src="Electric Toothbrush.jpeg" alt="Electric Toothbrush" class="product-image">
+            <h3>Electric Toothbrush</h3>
+            <p><span class="brand">Brand: Oral-B</span></p>
+            <p>Price: <span class="original-price">$50.00</span> $40.00 <span class="discount">20% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Electric Toothbrush', 40)">Add to Cart</button>
+            <button onclick="buyNow('Electric Toothbrush', 40)">Buy Now</button>
+        </div>
+
+        <!-- Product 18 -->
+        <div class="product-card">
+            <img src="Organic Honey.jpeg" alt="Organic Honey" class="product-image">
+            <h3>Organic Honey</h3>
+            <p><span class="brand">Brand: Nature's Best</span></p>
+            <p>Price: <span class="original-price">$12.00</span> $10.00 <span class="discount">16% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Organic Honey', 10)">Add to Cart</button>
+            <button onclick="buyNow('Organic Honey', 10)">Buy Now</button>
+        </div>
+
+        <!-- Product 19 -->
+       <div class="product-card">
+            <img src="Men's Casual Shirt.jpeg" alt="Men's Casual Shirt" class="product-image">
+            <h3>Men's Casual Shirt</h3>
+            <p><span class="brand">Brand: Levi's</span></p>
+            <p>Price: <span class="original-price">$40.00</span> $30.00 <span class="discount">25% off</span></p>
+            <p class="rating">★★★★★</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Men\'s Casual Shirt', 30)">Add to Cart</button>
+            <button onclick="buyNow('Men\'s Casual Shirt', 30)">Buy Now</button>
+        </div>
+
+        <!-- Product 20 -->
+        <div class="product-card">
+            <img src="Robot Vacuum.jpeg" alt="Robot Vacuum" class="product-image">
+            <h3>Robot Vacuum</h3>
+            <p><span class="brand">Brand: iRobot</span></p>
+            <p>Price: <span class="original-price">$350.00</span> $300.00 <span class="discount">14% off</span></p>
+            <p class="rating">★★★★☆</p>
+            <p class="free-delivery">Free Delivery</p>
+            <button onclick="addToCart('Robot Vacuum', 300)">Add to Cart</button>
+            <button onclick="buyNow('Robot Vacuum', 300)">Buy Now</button>
+        </div>
+     <!-- Product 21 -->
+  <div class="product-card">    
+    <img src="Graphic T-Shirt.jpeg" alt="Graphic T-Shirt" class="product-image">
+    <h3>Graphic T-Shirt</h3>
+    <p><span class="brand">Brand: UrbanWear</span></p>
+    <p>Price: <span class="original-price">$25.00</span> $20.00 <span class="discount">20% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Graphic T-Shirt', 20)">Add to Cart</button>
+    <button onclick="buyNow('Graphic T-Shirt', 20)">Buy Now</button>
+</div>
+
+<!-- Product 22 -->
+
+<div class="product-card">
+    <img src="Denim Jacket.jpeg" alt="Denim Jacket" class="product-image">
+    <h3>Denim Jacket</h3>
+    <p><span class="brand">Brand: StyleHub</span></p>
+    <p>Price: <span class="original-price">$60.00</span> $50.00 <span class="discount">17% off</span></p>
+    <p class="rating">★★★★★</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Denim Jacket', 50)">Add to Cart</button>
+    <button onclick="buyNow('Denim Jacket', 50)">Buy Now</button>
+</div>
+
+<!-- Product 23 -->
+
+<div class="product-card">
+    <img src="Casual Sneakers.jpeg" alt="Casual Sneakers" class="product-image">
+    <h3>Casual Sneakers</h3>
+    <p><span class="brand">Brand: StepUp</span></p>
+    <p>Price: <span class="original-price">$40.00</span> $35.00 <span class="discount">12% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Casual Sneakers', 35)">Add to Cart</button>
+    <button onclick="buyNow('Casual Sneakers', 35)">Buy Now</button>
+</div>
+
+<!-- Product 24 -->
+
+<div class="product-card">
+    <img src="Action Figure Set.jpeg" alt="Action Figure Set" class="product-image">
+    <h3>Action Figure Set</h3>
+    <p><span class="brand">Brand: HeroWorld</span></p>
+    <p>Price: <span class="original-price">$35.00</span> $28.00 <span class="discount">20% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Action Figure Set', 28)">Add to Cart</button>
+    <button onclick="buyNow('Action Figure Set', 28)">Buy Now</button>
+</div>
+
+<!-- Product 25 -->
+
+<div class="product-card">
+    <img src="Stuffed Teddy Bear.jpeg" alt="Stuffed Teddy Bear" class="product-image">
+    <h3>Stuffed Teddy Bear</h3>
+    <p><span class="brand">Brand: CuddleBuddies</span></p>
+    <p>Price: <span class="original-price">$20.00</span> $15.00 <span class="discount">25% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Stuffed Teddy Bear', 15)">Add to Cart</button>
+    <button onclick="buyNow('Stuffed Teddy Bear', 15)">Buy Now</button>
+</div>
+
+<!-- Product 26 -->
+
+<div class="product-card">
+    <img src="Remote Control Car.jpeg" alt="Remote Control Car" class="product-image">
+    <h3>Remote Control Car</h3>
+    <p><span class="brand">Brand: Speedster</span></p>
+    <p>Price: <span class="original-price">$35.00</span> $28.00 <span class="discount">20% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Remote Control Car', 28)">Add to Cart</button>
+    <button onclick="buyNow('Remote Control Car', 28)">Buy Now</button>
+</div>
+
+<!-- Product 27 -->
+
+<div class="product-card">
+    <img src="Facial Cleanser.jpeg" alt="Facial Cleanser" class="product-image">
+    <h3>Facial Cleanser</h3>
+    <p><span class="brand">Brand: PureGlow</span></p>
+    <p>Price: <span class="original-price">$18.00</span> $15.00 <span class="discount">17% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Facial Cleanser', 15)">Add to Cart</button>
+    <button onclick="buyNow('Facial Cleanser', 15)">Buy Now</button>
+</div>
+
+<!-- Product 28 -->
+
+<div class="product-card">
+    <img src="Hydrating Moisturizer.jpeg" alt="Hydrating Moisturizer" class="product-image">
+    <h3>Hydrating Moisturizer</h3>
+    <p><span class="brand">Brand: GlowEssence</span></p>
+    <p>Price: <span class="original-price">$25.00</span> $20.00 <span class="discount">20% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Hydrating Moisturizer', 20)">Add to Cart</button>
+    <button onclick="buyNow('Hydrating Moisturizer', 20)">Buy Now</button>
+</div>
+
+<!-- Product 29 -->
+
+<div class="product-card">
+    <img src="SPF Sunscreen.jpeg" alt="SPF Sunscreen" class="product-image">
+    <h3>SPF Sunscreen</h3>
+    <p><span class="brand">Brand: SunGuard</span></p>
+    <p>Price: <span class="original-price">$20.00</span> $16.00 <span class="discount">20% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('SPF Sunscreen', 16)">Add to Cart</button>
+    <button onclick="buyNow('SPF Sunscreen', 16)">Buy Now</button>
+</div>
+
+<!-- Product 29 -->
+
+<div class="product-card">
+    <img src="Elegant Crystal Stud Earrings.jpeg" alt="Elegant Crystal Stud Earrings" class="product-image">
+    <h3>Elegant Crystal Stud Earrings</h3>
+    <p><span class="brand">Brand: GlamAura</span></p>
+    <p>Price: <span class="original-price">$30.00</span> $15.00 <span class="discount">50% off</span></p>
+    <p class="rating">★★★★☆</p>
+    <p class="free-delivery">Free Delivery</p>
+    <button onclick="addToCart('Elegant Crystal Stud Earrings', 15)">Add to Cart</button>
+    <button onclick="buyNow('Elegant Crystal Stud Earrings', 15)">Buy Now</button>
+</div>
+
+</section>
+
+<footer>
+        <p>&copy; 2024 TrendifyMart</p>
+</footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
